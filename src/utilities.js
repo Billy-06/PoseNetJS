@@ -80,11 +80,17 @@ function toTuple({ y, x }) {
   return [y, x];
 }
 
-export function drawPoint(ctx, y, x, r, color) {
+export function drawPoint(ctx, y, x, r, color, name, score) {
   ctx.beginPath();
   ctx.arc(x, y, r, 0, 2 * Math.PI);
   ctx.fillStyle = color;
   ctx.fill();
+  // Write part name
+  ctx.fillStyle = "orange";
+  ctx.fillText(name, x - 10, y - 10);
+  // Write part confidence
+  ctx.fillStyle = "green";
+  ctx.fillText(`Score: ${score}`, x - 10, y - 20);
 }
 
 /**
@@ -131,7 +137,15 @@ export function drawKeypoints(keypoints, minConfidence, ctx, scale = 1) {
     }
 
     const { y, x } = keypoint.position;
-    drawPoint(ctx, y * scale, x * scale, 3, color);
+    drawPoint(
+      ctx,
+      y * scale,
+      x * scale,
+      3,
+      color,
+      keypoint.part,
+      keypoint.score.toFixed(2)
+    );
   }
 }
 
