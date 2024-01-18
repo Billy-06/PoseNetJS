@@ -2,7 +2,7 @@
   "name": "posenet",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://billy-06.github.io/PoseNetJS/public/index.html",
+  "homepage": "https://billy-06.github.io/PoseNetJS/",
   "dependencies": {
     "@tensorflow-models/posenet": "^2.2.1",
     "@tensorflow/tfjs": "^2.3.0",
