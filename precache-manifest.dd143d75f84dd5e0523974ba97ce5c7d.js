@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "23ebf8b52c2e1b5bc207c7de0f7492a9",
+    "revision": "b1dadb100615944799937a721b07fb1f",
     "url": "/PoseNetJS/index.html"
   },
   {
-    "revision": "8895c5716ce25d7a155c",
+    "revision": "78ce5806a1cb4a5e0d5c",
     "url": "/PoseNetJS/static/css/main.435d5fe5.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/PoseNetJS/static/js/2.1ffeb580.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8895c5716ce25d7a155c",
-    "url": "/PoseNetJS/static/js/main.cd154e2f.chunk.js"
+    "revision": "78ce5806a1cb4a5e0d5c",
+    "url": "/PoseNetJS/static/js/main.f317f1ec.chunk.js"
   },
   {
     "revision": "a78ab45dbfa2e04dba1d",
