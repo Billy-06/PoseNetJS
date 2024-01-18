@@ -26,7 +26,7 @@ Use this command on a windows only
 $env:NODE_OPTIONS="--openssl-legacy-provider"
 ```
 
-### Linux & MacOS**
+### Linux & MacOS\*\*
 
 Use this command on a linux or macOS device only
 
@@ -40,4 +40,49 @@ Run the application to test the pose estimation task with the below command
 
 ```bash
 npm start
+```
+
+## Hosting on Github
+
+### 1. Install gh-pages
+
+```bash
+npm install gh-pages --save-dev
+```
+
+### 2. Add a homepage property
+
+```json
+{
+    "name": "my-app",
+    "version": "0.1.0",
++   "homepage": "https://billy-06.github.io/PoseNetJS",
+    "private": true,
+    ...
+}
+```
+
+### 3. Add predeploy and deploy scripts
+
+```json
+"scripts": {
++   "predeploy": "npm run build",
++   "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+}
+```
+
+### Predeploy then deploy
+
+Deploy
+
+```bash
+npm run predeploy
+```
+
+predeploy (optional to add a message)
+
+```bash
+npm run deploy -- -m "Deploy React app to GitHub Pages"
 ```
