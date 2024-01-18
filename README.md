@@ -86,3 +86,13 @@ predeploy (optional to add a message)
 ```bash
 npm run deploy -- -m "Deploy React app to GitHub Pages"
 ```
+
+### Configure Deployment branch on GitPages
+
+Set deployment branch to `gh-pages`
+
+Set the directory to `/root`
+
+### All set
+
+Check the browser at [your gh link](https://billy-06.github.io/PoseNetJS)

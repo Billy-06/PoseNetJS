@@ -9,7 +9,6 @@
 
 import React, { useRef } from "react";
 import "./App.css";
-// import * as tf from "@tensorflow/tfjs";
 import * as posenet from "@tensorflow-models/posenet";
 import Webcam from "react-webcam";
 import { drawKeypoints, drawSkeleton } from "./utilities";
@@ -22,7 +21,7 @@ function App() {
   const runPosenet = async () => {
     const net = await posenet.load({
       inputResolution: { width: 640, height: 480 },
-      scale: 0.8,
+      scale: 0.5,
     });
     //
     setInterval(() => {
@@ -71,8 +70,8 @@ function App() {
           ref={webcamRef}
           style={{
             position: "absolute",
-            marginLeft: "auto",
-            marginRight: "auto",
+            marginLeft: 0,
+            marginRight: 20,
             left: 0,
             right: 0,
             textAlign: "center",
@@ -86,8 +85,8 @@ function App() {
           ref={canvasRef}
           style={{
             position: "absolute",
-            marginLeft: "auto",
-            marginRight: "auto",
+            marginLeft: 0,
+            marginRight: 20,
             left: 0,
             right: 0,
             textAlign: "center",
